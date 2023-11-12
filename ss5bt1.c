@@ -55,10 +55,9 @@ int main(){
 				float cdt = sqrt(dt);
 				x1 = (-b-cdt)/(2*a);
 				x2 = (-b+cdt)/(2*a);
-				printf("phuong trinh co 2 nghiem thuc x=%f, x%f",x1,x2);
+				printf("phuong trinh co 2 nghiem thuc x=%f, x=%f",x1,x2);
 			}
-		}
-			
-		}
+		}	
 	}
+}
 
