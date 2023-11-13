@@ -4,9 +4,8 @@ int main(){
 	float a,b,c,dt,x1,x2;
 	printf("nhap a b c:");
 	scanf("%f %f %f",&a,&b,&c);
-//	printf("pt cua ban la %d*x*x + %d*x + %d = 0",a,b,c);
 	dt = b*b - 4*a*c ;
-//	printf("\n%d",dt);
+	
 	//a = 0
 	if (a==0){
 		//b=0,c!=0
