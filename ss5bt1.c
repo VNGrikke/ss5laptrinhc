@@ -18,7 +18,7 @@ int main(){
 		//b=0,c=0
 		}else if(b==0&&c==0){
 			printf("phuong trinh vo so nghiem");
-			//b!=0, c!=0
+		//b!=0, c!=0
 		}else{
 			x1 = -(c/b);
 			printf("phuong trinh co nghiem: %f",x1);
