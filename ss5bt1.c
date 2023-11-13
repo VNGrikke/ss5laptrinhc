@@ -12,6 +12,9 @@ int main(){
 		//b=0,c!=0
 		if(b==0&&c!=0){
 			printf("phuong trinh vo nghiem!!");
+		//b!=0,c=0
+		}else if(b!=0&&c==0){
+			printf("phuong trinh co 1 nghiem x=0");
 		//b=0,c=0
 		}else if(b==0&&c==0){
 			printf("phuong trinh vo so nghiem");
@@ -25,17 +28,22 @@ int main(){
 		//b=0 va c=0
 		if(b==0&&c==0){
 			printf("phuong trinh co nghiem x=0");
+		//b!=0 va c=0
+		}else if(b!=0&&c==0){
+			x1 = 0;
+			x2 = -b/a;
+			printf("phuong trinh co nghiem phan biet x=%f, x=%f",x1,x2);
 		//b=0 va c!=0
 		}else if(b==0&&c!=0){
 			//-c/a>0
 			if(-c/a>0){
-				x1 = sqrt((-c/a));
-				x2 = -sqrt((-c/a));
+				x1 = sqrt(-c/a);
+				x2 = -sqrt(-c/a);
 				printf("phuong trinh co nghiem phan biet x=%f, x=%f",x1,x2);
 			//-c/a<0
 			}else{
-				x1 = sqrt((c/a));
-				x2 = -sqrt((c/a));				
+				x1 = sqrt(c/a);
+				x2 = -sqrt(c/a);				
 				printf("phuong trinh co 2 nghiem phuc x=%fi, x=%fi",x1,x2);
 			}
 		//b!=0,c!=0
@@ -57,7 +65,7 @@ int main(){
 				x2 = (-b+cdt)/(2*a);
 				printf("phuong trinh co 2 nghiem thuc x=%f, x=%f",x1,x2);
 			}
-		}	
+		}		
 	}
 }
 
